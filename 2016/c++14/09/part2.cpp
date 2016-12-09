@@ -2,7 +2,6 @@
 
 #include <iostream>
 #include <string>
-#include <sstream>
 
 long int decompress(const std::string& line)
 {
@@ -49,8 +48,6 @@ long int decompress(const std::string& line)
 
 int main()
 {
-	std::ostringstream uncompressedString{""};
-
 	long int count{0};
 	std::string curLine;
 	while (std::getline(std::cin, curLine)) {
